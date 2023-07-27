@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-07-27 Thu 09:47 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Simple Linux Theory</title>
+<meta name="author" content="Rob Alicea" />
+<meta name="description" content="streamers tech website" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The Simple Linux Theory</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org19b39c8">About</a>
+<ul>
+<li><a href="#org9f9c7ef">My Linux Journey</a></li>
+<li><a href="#org4590274">Navigating the Linux Learning Curve: My Journey from Windows to the Penguin World</a></li>
+</ul>
+</li>
+<li><a href="#org76b4c97">Blogs</a>
+<ul>
+<li><a href="#orgbbc0ccf">How To Set Up WireGuard on Ubuntu VPS &amp; Fedora Client</a>
+<ul>
+<li><a href="#org0d83738">Introduction</a></li>
+<li><a href="#orgc2af49e">Prerequisites</a></li>
+<li><a href="#org3bbcd06">Installing Wireguard</a></li>
+<li><a href="#org00ff4d5">Firewall Configuration</a></li>
+<li><a href="#org9dae62f">Command Output</a></li>
+<li><a href="#orgbf7f3ee">Enable Wireguard Server</a></li>
+<li><a href="#org4b00aed">Add this line to the end of the file if you want to use WireGuard with IPv4 and IPv6:</a></li>
+<li><a href="#org262c563">Execute the following command to read the file and import the new values into your current terminal session:</a></li>
+<li><a href="#org0a70b47">Command Output</a></li>
+<li><a href="#org3c618bb">Installing Wireguard on Fedora (Peer)</a></li>
+<li><a href="#orgc015dbe">Enable Wireguard in your system</a></li>
+<li><a href="#org52b4a4b">Command Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org19b39c8" class="outline-2">
+<h2 id="org19b39c8">About</h2>
+<div class="outline-text-2" id="text-org19b39c8">
+</div>
+<div id="outline-container-org9f9c7ef" class="outline-3">
+<h3 id="org9f9c7ef">My Linux Journey</h3>
+<div class="outline-text-3" id="text-org9f9c7ef">
+<p>
+Welcome to The Simple Linux Theory, where I share my journey of transitioning from Windows to Linux and exploring the fascinating world of open-source technology. Despite not having a background in computer science or software development, I have found the inner workings of computers to be truly captivating.
+</p>
+
+<p>
+Having been a loyal user of Microsoft&rsquo;s operating system for many years, making the decision to switch to Linux was quite a daunting challenge. However, as I&rsquo;ve spent time immersing myself in this powerful OS, I can confidently say that it has been one of the most thrilling changes I&rsquo;ve ever made.
+</p>
+
+<p>
+Linux may appear intimidating initially, with its command line interface (CLI) and unfamiliarity to mainstream users accustomed to Windows or MacOS. However, as you delve deeper into the Linux world, you&rsquo;ll discover a wealth of possibilities and a supportive community eager to assist newcomers like myself. From customizing your system to fit your specific needs to accessing a plethora of open-source software like LibreOffice, GIMP, and VLC Media Player, Linux offers a unique experience compared to commercial alternatives.
+</p>
+
+<p>
+What&rsquo;s even more exciting is the freedom and flexibility Linux offers to developers, allowing them to create custom distributions or &ldquo;distros&rdquo; tailored for various purposes, such as gaming, programming, media creation, and retro gaming. These distros come with preinstalled applications designed for specific tasks while providing easy access to a vast array of programs through their respective package managers.
+</p>
+
+<p>
+Although the idea of transitioning to Linux might seem intimidating, you can explore its amazing features without fully committing. Many popular distros offer live versions that boot from USB drives or DVDs, enabling you to try them out without installing anything on your computer. This way, you can decide whether to install Linux alongside Windows or replace it entirely based on your experience.
+</p>
+
+<p>
+However, be prepared for an initial learning curve when starting this exciting journey as a Linux enthusiast. The command line interface may feel foreign if you&rsquo;ve solely used graphical interfaces in the past. Allocating some time to study tutorials and learn basic terminal commands will be essential before delving into the customization and optimization of your new Linux PC.
+</p>
+
+<p>
+In conclusion, Linux presents numerous advantages over proprietary systems but requires effort to master due to its reliance on text-based input. Open source advocates often encourage others to join the revolution against vendor lock-in, empowering individuals to take control of their digital lives rather than relying solely on corporate dominance. If you&rsquo;re interested in exploring Linux for the first time, give it a shot! Download a few LiveCD ISO images and experiment until you feel confident enough to attempt a full installation alongside your current setup. Embracing change and diving into Linux and the surrounding FOSS ecosystems can lead to significant personal growth and fulfillment through learning cutting-edge technologies. Thank you for reading The Simple Linux Theory, and I wish you a happy exploration of the world of open-source computing!
+</p>
+</div>
+</div>
+<div id="outline-container-org4590274" class="outline-3">
+<h3 id="org4590274">Navigating the Linux Learning Curve: My Journey from Windows to the Penguin World</h3>
+<div class="outline-text-3" id="text-org4590274">
+<p>
+Are you considering switching to Linux from Windows? Trust me, you&rsquo;re not alone! Making the transition to Linux can be an exciting and liberating experience, but it&rsquo;s not without its challenges. As a fellow Linux newcomer, I can vouch for the fact that the learning curve can feel daunting, especially if you&rsquo;re not well-versed in tech jargon or accustomed to the Linux environment. In this post, I want to share my own journey and highlight some of the obstacles I faced while trying to master the art of Linux.
+</p>
+
+<p>
+When I first embarked on my Linux adventure, I relied heavily on the vast expanse of the internet for information and guidance. While it&rsquo;s true that there is an abundance of resources available, it can also be overwhelming. It&rsquo;s not always easy to determine which sources are trustworthy or suitable for beginners like me who have no prior knowledge of Linux.
+</p>
+
+<p>
+Books on the subject are great, but many of them seem to assume a certain level of familiarity with Linux concepts or terminology. For someone starting from scratch, this can be frustrating and confusing. I found myself getting lost in technical jargon and unable to grasp the fundamentals of Linux.
+</p>
+
+<p>
+Turning to video tutorials on platforms like YouTube seemed like a more accessible option. Influential Linux personalities like Chris Titus and DT (DistroTube) have provided incredible content for the Linux community. However, I soon discovered that their explanations often assumed a level of preexisting knowledge that I simply didn&rsquo;t possess. While they were experts in their field, their tutorials didn&rsquo;t always cater to complete beginners like myself.
+</p>
+
+<p>
+As a result, trying to comprehend the concepts they discussed in my early days with Linux was indeed a challenge. It felt like being thrown into a pool without knowing how to swim. I yearned for more beginner-friendly content that could help me build a solid foundation in Linux before diving into the more complex topics.
+</p>
+
+<p>
+Despite these challenges, I persisted because I knew that Linux had a lot to offer, both in terms of customization and enhanced control over my system. I reached out to online forums and communities, seeking guidance from fellow Linux enthusiasts. These communities proved to be invaluable sources of support, providing patient answers to my questions and offering advice tailored to newcomers.
+</p>
+
+<p>
+Over time, I began to build my understanding of Linux step by step. I focused on learning the basics of the command line, file system structure, package management, and different desktop environments. I made an effort to follow along with more beginner-oriented tutorials and gradually expanded my knowledge base.
+</p>
+
+<p>
+To help others who might find themselves in a similar situation, here are a few tips that proved helpful on my journey:
+</p>
+
+<ul class="org-ul">
+<li>Seek Beginner-Friendly Resources: Look for tutorials and guides specifically tailored to newcomers. Websites like Linux Journey and Linux Handbook offer step-by-step explanations and hands-on exercises for beginners.</li>
+
+<li>Online Communities: Engage with online forums and communities where you can ask questions, share experiences, and learn from others who have been through the same learning process.</li>
+
+<li>Patience and Perseverance: Remember that learning Linux takes time, and it&rsquo;s okay to make mistakes along the way. Be patient with yourself and celebrate every small victory.</li>
+
+<li>Virtual Machines: Consider setting up a virtual machine with Linux to experiment without affecting your main operating system. This provides a safe environment to learn and test different distributions and commands.</li>
+
+<li>Embrace the Learning Process: Embrace the challenge of learning something new. With time and effort, you&rsquo;ll become more comfortable and confident in using Linux.</li>
+</ul>
+
+<p>
+Switching to Linux from Windows might be a bit painful and come with a steep learning curve, but it can also be an immensely rewarding experience. Once you overcome the initial hurdles and build your knowledge, the world of Linux opens up to offer a new level of customization, control, and freedom over your computing experience.
+</p>
+
+<p>
+So, if you&rsquo;re feeling overwhelmed by the transition, know that you&rsquo;re not alone. Take it one step at a time, and you&rsquo;ll soon find yourself navigating the Linux landscape with ease. Happy learning, fellow penguin enthusiasts!
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org76b4c97" class="outline-2">
+<h2 id="org76b4c97">Blogs</h2>
+<div class="outline-text-2" id="text-org76b4c97">
+</div>
+<div id="outline-container-orgbbc0ccf" class="outline-3">
+<h3 id="orgbbc0ccf">How To Set Up WireGuard on Ubuntu VPS &amp; Fedora Client</h3>
+<div class="outline-text-3" id="text-orgbbc0ccf">
+</div>
+<div id="outline-container-org0d83738" class="outline-4">
+<h4 id="org0d83738">Introduction</h4>
+<div class="outline-text-4" id="text-org0d83738">
+<p>
+<a href="https://www.wireguard.com">Wireguard</a> is an easy-to-use VPN service that works with both IPv4 and IPv6 networks. Using a virtual private network, you may make an otherwise unsafe connection seem as secure as a local one. You can use your mobile device or laptop with complete peace of mind when connecting to public networks like hotel or coffee shop WiFi.
+</p>
+
+<p>
+To create an encrypted connection between peers, WireGuard uses a pair of public and private keys. WireGuard uses a different set of cryptographic ciphers in each iteration to guarantee ease of use, safety, and interoperability.
+</p>
+
+<p>
+To authenticate and build encrypted tunnels between systems, other VPN applications like OpenVPN and IPSec use Transport Layer Security (TLS) and certificates. While the hundreds of supported cryptographic suites and algorithms in various TLS implementations provide significant flexibility for supporting a wide variety of clients, they also increase the time, complexity, and likelihood of human mistake while setting a VPN that use TLS.
+</p>
+
+<p>
+In this guide, you&rsquo;ll learn how to install WireGuard on an Ubuntu 22.04 server and set up a peer connection to that server over IPv4 (also known as a dual stack connection). Use of the VPN for an encrypted peer-to-peer connection is covered, as is the option of redirecting the peer&rsquo;s Internet traffic through the WireGuard server in a gateway setup.
+</p>
+
+<p>
+In this guide, we&rsquo;ll show you how to set up a Fedora 38 machine to act as a client to your WireGuard Server. WireGuard will be installed and run on Android, and iOS devices and systems in subsequent tutorials in this series.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc2af49e" class="outline-4">
+<h4 id="orgc2af49e">Prerequisites</h4>
+<div class="outline-text-4" id="text-orgc2af49e">
+<p>
+A single Ubuntu 22.04 server with a non-root sudo user and firewall enabled. Throughout this guide, we will refer to this component as the WireGuard Server.
+</p>
+
+<p>
+You must have a client machine in order to connect to your WireGuard Server. This machine is referred to as the WireGuard Peer in this tutorial. For the purposes of this tutorial, it is recommended that you use your local workstation as the WireGuard Peer; however, remote servers or mobile phones can be used as clients if desired. If you are using a remote system, be careful to follow all of the optional sections later in this tutorial; otherwise, you may become locked out of the system.
+</p>
+
+<p>
+In order to utilize WireGuard with IPv6, you must also ensure that your server is configured to support this form of traffic. If you would like to enable IPv6 support for WireGuard on a DigitalOcean Droplet, please refer to this documentation page: How to Enable IPv6 on Droplets. You can add IPv6 support when you initially construct a Droplet, or later using the instructions on that page.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3bbcd06" class="outline-4">
+<h4 id="org3bbcd06">Installing Wireguard</h4>
+<div class="outline-text-4" id="text-org3bbcd06">
+<div class="org-src-container">
+<pre class="src src-nil">$ apt install wireguard -y
+$ cd /etc/wireguard
+$ umask 077; wg genkey | tee privatekey | wg pubkey &gt; publickey
+$ cat /etc/wireguard/private.key | wg pubkey | tee /etc/wireguard/public.key
+$ nano wg0.conf
+
+    [Interface]
+    PrivateKey = IC0TD34HbzY+eRF0DajRwMw2ND+jBrqXVLJJQIw6l0c=
+    Address = 10.72.1.1/24
+    ListenPort = 51820
+    PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+
+    [Peer]
+    # PC
+    PublicKey = Mydt6pBqmsBlLghJnivjsTb1h7G5ejFgqnPxJ69lzi8=
+    AllowedIPs = 10.72.1.2
+    PersistentKeepalive = 25
+
+    # Mobile Device
+    PublicKey = MOBILE_PUBLIC_KEY
+    # The IP address that will be assigned to this client
+    AllowedIPs = 10..72.1.3, fd86:ea04:1115::2/1283
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org00ff4d5" class="outline-4">
+<h4 id="org00ff4d5">Firewall Configuration</h4>
+<div class="outline-text-4" id="text-org00ff4d5">
+<div class="org-src-container">
+<pre class="src src-nil">$ ufw status
+$ ufw allow 51820/udp
+$ ufw allow OpenSSH
+$ ufw enable
+$ ufw status
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9dae62f" class="outline-4">
+<h4 id="org9dae62f">Command Output</h4>
+<div class="outline-text-4" id="text-org9dae62f">
+<div class="org-src-container">
+<pre class="src src-nil">Status: active
+
+To                         Action      From
+--                         ------      ----
+51280/udp                  ALLOW       Anywhere
+22/tcp                     ALLOW       Anywhere
+51280/udp (v6)             ALLOW       Anywhere (v6)
+22/tcp (v6)                ALLOW       Anywhere (v6)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbf7f3ee" class="outline-4">
+<h4 id="orgbf7f3ee">Enable Wireguard Server</h4>
+<div class="outline-text-4" id="text-orgbf7f3ee">
+<div class="org-src-container">
+<pre class="src src-nil">$ systemctl enable wg-quick@wg0.service
+$ systemctl start wg-quick@wg0.service
+$ systemctl status wg-quick@wg0.service
+$ systemctl restart wg-quick@wg0.service
+$ nano /etc/sysctl.conf
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4b00aed" class="outline-4">
+<h4 id="org4b00aed">Add this line to the end of the file if you want to use WireGuard with IPv4 and IPv6:</h4>
+<div class="outline-text-4" id="text-org4b00aed">
+<div class="org-src-container">
+<pre class="src src-nil">net.ipv6.conf.all.forwarding = 1
+net.ipv4.ip_forward = 1
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org262c563" class="outline-4">
+<h4 id="org262c563">Execute the following command to read the file and import the new values into your current terminal session:</h4>
+<div class="outline-text-4" id="text-org262c563">
+<div class="org-src-container">
+<pre class="src src-nil">$ sysctl -p
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0a70b47" class="outline-4">
+<h4 id="org0a70b47">Command Output</h4>
+<div class="outline-text-4" id="text-org0a70b47">
+<div class="org-src-container">
+<pre class="src src-nil">net.ipv6.conf.all.forwarding = 1
+net.ipv4.ip_forward = 1
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3c618bb" class="outline-4">
+<h4 id="org3c618bb">Installing Wireguard on Fedora (Peer)</h4>
+<div class="outline-text-4" id="text-org3c618bb">
+<div class="org-src-container">
+<pre class="src src-nil">$ sudo su
+$ dnf list wireguard-tools
+$ cd /etc/wireguard
+$ wg genkey | sudo tee /etc/wireguard/private.key
+$ sudo cat /etc/wireguard/private.key | wg pubkey | sudo tee /etc/wireguard/public.key
+$ nano wg0.conf
+
+    [Interface]
+    Address = 10.72.1.2/24
+    PrivateKey =
+    ListenPort = 51820
+
+    [Peer]
+    PublicKey = 6Kzyrbbf7X7s6Mq1S1zqs5oe1qVQspWCXFGPf4UBxQA=
+    Endpoint = IP Address of VPS:51820
+    AllowedIPs = 0.0.0.0/0, ::/0
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc015dbe" class="outline-4">
+<h4 id="orgc015dbe">Enable Wireguard in your system</h4>
+<div class="outline-text-4" id="text-orgc015dbe">
+<div class="org-src-container">
+<pre class="src src-nil">$ wg-quick up wg0
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org52b4a4b" class="outline-4">
+<h4 id="org52b4a4b">Command Output</h4>
+<div class="outline-text-4" id="text-org52b4a4b">
+<div class="org-src-container">
+<pre class="src src-nil">ip link add wg0 type wireguard
+wg setconf wg0 /dev/fd/63
+ip -4 address add 10.72.1.2 dev wg0
+ip link set mtu 1420 up dev wg0
+resolvconf -a wg0 -m 0 -x
+wg set wg0 fwmark 51820
+ip -6 route add ::/0 dev wg0 table 51820
+ip -6 rule add not fwmark 51820 table 51820
+ip -6 rule add table main suppress_prefixlength 0
+nft -f /dev/fd/63
+ip -4 route add 0.0.0.0/0 dev wg0 table 51820
+ip -4 rule add not fwmark 51820 table 51820
+ip -4 rule add table main suppress_prefixlength 0
+sysctl -q net.ipv4.conf.all
+nft -f /dev/fd/63
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2023-07-25 Tue 00:00</p>
+<p class="author">Author: Rob Alicea</p>
+<p class="date">Created: 2023-07-27 Thu 09:47</p>
+</div>
+</body>
+</html>
