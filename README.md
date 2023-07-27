@@ -12,13 +12,18 @@ Before using this project, ensure you have the following installed:
     Org-mode: An Emacs mode for organizing your life in plain text.
     Git: A version control system.
 
-Getting Started
+# Getting Started
 
 To use this project, follow these steps:
+<pre>
+```bash
+#!/bin/bash
 
 https://github.com/fniessen/org-html-themes.git
+```
+</pre>
 
-Contributing
+# Contributing
 
 If you want to contribute to this project, feel free to fork the repository, make your changes, and create a pull request. The project owner will review your contribution and merge it if it fits the project's goals.
 
