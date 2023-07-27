@@ -15,13 +15,11 @@ Before using this project, ensure you have the following installed:
 # Getting Started
 
 To use this project, follow these steps:
-<pre>
 ```bash
 #!/bin/bash
 
 https://github.com/fniessen/org-html-themes.git
 ```
-</pre>
 
 # Contributing
 
