@@ -3,7 +3,7 @@ Website on Doom Emacs ORG with ReadtheOrg Theme
 
 This project aims to create a website using Doom Emacs ORG mode along with the ReadtheOrg theme from GitHub. The website content is written in org-mode, a powerful markup language that integrates seamlessly with Emacs. The ReadtheOrg theme provides a clean and modern look for org-mode HTML exports.
 
-Please note that at the moment, the project is a work in progress, and the developer is still exploring and figuring out how everything works. If you're interested in contributing or simply want to use the website, follow the instructions below to get started.
+Please note that at the moment, the project is a work in progress, and I'm still exploring and figuring out how everything works. If you're interested in contributing or simply want to use the website, follow the instructions below to get started.
 Prerequisites
 
 Before using this project, ensure you have the following installed:
