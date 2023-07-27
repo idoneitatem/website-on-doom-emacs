@@ -16,11 +16,8 @@ Before using this project, ensure you have the following installed:
 
 To use this project, follow these steps:
 ```bash
-#!/bin/bash
-
 https://github.com/fniessen/org-html-themes.git
 ```
-
 # Contributing
 
 If you want to contribute to this project, feel free to fork the repository, make your changes, and create a pull request. The project owner will review your contribution and merge it if it fits the project's goals.
